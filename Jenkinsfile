@@ -15,8 +15,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("/var/lib/jenkins/workspace/New_demo/my-app/") {
-                sh 'mvn -Dmaven.test.failure.ignore=true install'
+                sh 'mvn -B -DskipTests clean package'
                 }
             
             }
