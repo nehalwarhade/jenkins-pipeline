@@ -8,7 +8,7 @@ pipeline {
         stage ('Initialize') {
             steps {
                 sh '''
-                    echo "PATH = ${M2_HOME}/bin:${PATH}"
+                    
                     echo "M2_HOME = /usr/share/maven"
                 ''' 
             }
